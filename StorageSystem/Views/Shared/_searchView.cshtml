@@ -1,0 +1,22 @@
+﻿
+@model StorageSystem.Models.Product
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+            <form class="row" asp-controller="Products" asp-action="SearchCatergory">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="col-8 form-group">
+                    <label asp-for="Category" class="control-label">Search by category:</label>
+                    <input asp-for="Category" class="form-control" />
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+                <div class="col-4">
+                    <label id="plable" class="control-label" for="searchButton"></label>
+                    <button id="searchButton" type="submit" class="btn btn-primary mb-3">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col"></div>
+    </div>
+</div>
